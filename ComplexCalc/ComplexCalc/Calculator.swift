@@ -47,4 +47,7 @@ class Calculator {
         return (arr.reduce(0, {$0 + $1}) / arr.count)
     }
 
+    func mathOp(args:[Int], beg: Int, op: (Int, Int) -> Int) -> Int{
+        return args.reduce(beg, op)
+    }
 }
